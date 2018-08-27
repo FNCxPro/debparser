@@ -12,12 +12,18 @@ class PackagesParser extends Parser {
   parse(contents, options={}) {
     options = defaultsProvider.assignDefaults(options)
     let packages = {length: 0}
+    if (options.array) packages=[]
     let packageStrings = contents.split(/\n{2,}/g)
     packageStrings.forEach((str) => {
       let pkg = new Package(str)
-      if (!packages[pkg.package]) packages[pkg.package] = {}
-      packages[pkg.package][pkg.version] = pkg
-      packages.length = packages.length + 1
+      if (options.array) {
+        packages.push(pkg)
+      } else {
+        if (!packages[pkg.package]) packages[pkg.package] = {}
+        packages[pkg.package][pkg.version] = pkg
+        packages.length = packages.length + 1
+      }
+      
     })
     return packages
   }

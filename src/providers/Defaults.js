@@ -3,7 +3,8 @@ const crypto = require('crypto')
 let defaults = {
   headers: {
     'user-agent': 'Debian APT-HTTP/1.3'
-  }
+  },
+  array: false
 }
 
 function getDefaults() {
