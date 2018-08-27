@@ -1,0 +1,21 @@
+{
+  "name": "debparser",
+  "version": "0.1.0",
+  "description": "Parse Debian control and Packages files",
+  "main": "src/index.js",
+  "repository": "https://github.com/FNCxPro/debparser.git",
+  "author": "Relative <relative@outlook.ie>",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-things": "^0.2.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,43 @@
+Package: pro.relative.testone
+Name: Package Test One
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: The first test package
+Section: Tweaks
+Version: 1.0.0
+Installed-Size: 236
+Size: 10001
+Filename: download/pro.relative.testone/1.0.0
+
+Package: pro.relative.testtwo
+Name: Package Test Two
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: The second test package
+Section: Tweaks
+Version: 1.0.0
+Installed-Size: 236
+Size: 10002
+Filename: download/pro.relative.testtwo/1.0.0
+
+Package: pro.relative.testone
+Name: Package Test One
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Description: The first test package that now needs preferenceloader
+Section: Tweaks
+Version: 1.0.1
+Installed-Size: 236
+Size: 10001
+Filename: download/pro.relative.testone/1.0.1
+
+Package: pro.relative.testtwo
+Name: Package Test Two
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: The second test package
+Section: Tweaks
+Version: 1.0.1
+Installed-Size: 236
+Size: 10002
+Filename: download/pro.relative.testtwo/1.0.1
