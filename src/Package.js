@@ -10,6 +10,7 @@ class Package {
     let obj = {}
     _info.forEach((line) => {
       let lineSplit = line.split(':')
+      if (!lineSplit) return
       let field = lineSplit[0].trim()
       let value = lineSplit[1].trim()
       obj[field] = value
